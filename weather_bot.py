@@ -45,11 +45,11 @@ def get_weather_report():
         
         pop_int = int(pop) if pop.isdigit() else 0
         if pop_int >= 70:
-            tips = "🚨 降雨機率極高！出門請務必攜帶折疊傘！"
+            tips = "降雨機率極高！出門請務必攜帶折疊傘！"
         elif 30 <= pop_int < 70:
-            tips = "⛅ 天氣不太穩定，建議帶傘備用。"
+            tips = "天氣不太穩定，建議帶傘備用。"
         else:
-            tips = "☀️ 天氣晴朗或多雲，是個適合做研究的好日子！"
+            tips = "天氣晴朗或多雲，是個適合做研究的好日子！"
             
         tw_tz = pytz.timezone('Asia/Taipei')
         now = datetime.now(tw_tz)
