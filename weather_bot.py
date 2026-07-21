@@ -55,7 +55,7 @@ def get_weather_report():
         now = datetime.now(tw_tz)
 
         # 組裝純天氣報告
-        report = f"═══ 空間站每日氣象廣播 ═══\n"
+        report = f"═══ 太空站每日氣象廣播 ═══\n"
         report += f"播報時間：{now.strftime('%m/%d %H:%M')}\n"
         report += f"觀測區域：{target_location}\n"
         report += f"天氣狀態：{wx}\n"
