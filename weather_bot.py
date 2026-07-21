@@ -62,7 +62,7 @@ def get_weather_report():
         report += f"氣溫預測：{min_t}°C ～ {max_t}°C\n"
         report += f"降雨機率：{pop}%\n"
         report += f"站長提醒：{tips}\n"
-        report += f"═══════════════════════"
+        report += f"════════════════════"
         return report
 
     except Exception as e:
